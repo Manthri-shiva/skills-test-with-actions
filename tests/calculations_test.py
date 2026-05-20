@@ -38,4 +38,14 @@ def test_get_nth_fibonacci_one():
     result = get_nth_fibonacci(n)
     assert result == 1
 
+def test_get_nth_fibonacci_ten():
+    assert get_nth_fibonacci(10) == 55
 
+
+def test_get_nth_fibonacci_five():
+    assert get_nth_fibonacci(5) == 5
+
+
+def test_area_of_circle_two():
+    result = area_of_circle(2)
+    assert abs(result - 12.56636) < 1e-4
