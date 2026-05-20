@@ -49,3 +49,10 @@ def test_get_nth_fibonacci_five():
 def test_area_of_circle_two():
     result = area_of_circle(2)
     assert abs(result - 12.56636) < 1e-4
+
+def test_area_of_circle_three():
+    result = area_of_circle(3)
+    assert abs(result - 28.27431) < 1e-4
+def test_area_of_circle_negative_radius():
+    with pytest.raises(ValueError):
+        area_of_circle(-1)
